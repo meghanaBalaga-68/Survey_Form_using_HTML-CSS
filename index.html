@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_Form_By_using_HTML/CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey_Form</h1>
+    <p id="description">Hi This is My First Project &#128157</p>
+    <form id="survey-form">
+        <label for="name-label">Name <input id="name" placeholder="Enter Your Name" type="text" required /></label>
+        <label for="email-label">Email <input id="email" type="email" placeholder="Enter Your Email" required /></label>
+        <label for="number-label">Age <input id="number" type="number" min="13" max="120"
+                placeholder="Enter Your Age" /></label>
+        <label for="dropdown"> Which option best describes you?
+           <select name="dropdown" id="dropdown">
+            <option value=""></option>
+            <option value="1">Student</option>
+            <option value="2">Intern</option>
+            <option value="3">Professional</option>
+            <option value="4">Other</option>
+           </select>
+        </label>
+        <label>Would you recommend Freecodecamp
+            to a friend?</label>
+        <label><input type="radio" name="yes" id="choose-yes" value="Yes"/>Yes</label>
+        <label><input type="radio" name="yes"  id="choose-no"  value="No"/>No</label>
+        <label><input type="radio" name="yes" id="choose-maybe"  value="Maybe"/>Maybe</label>
+        <label>which languages are known?</label>
+        <label for="C"><input type="checkbox" value="C"> C</label>
+        <label for="C++"><input type="checkbox" value="C++"> C++</label>
+        <label for="Javascript"><input type="checkbox" value="Javascript"> Javascript</label>
+        <label for="Python"><input type="checkbox" value="Python"> Python</label>
+        <label for="Java"><input type="checkbox" value="Java"> Java</label>
+
+        <label for="suggestion">Any Suggestions or Comments<textarea name="comments" id="suggestion" cols="30" rows="3" placeholder="Enter your comments here"></textarea></label>
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+</body>
+
+</html>
